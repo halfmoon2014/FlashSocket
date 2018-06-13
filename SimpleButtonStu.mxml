@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" click="addSimpleButton()">
+
+<mx:Script>
+
+         <![CDATA[
+
+                   //引入包
+
+                  import flex.stu.FlexStuButton;
+
+                  //创建一个FlexStuButton的实例       
+
+                   private var flexbutton:FlexStuButton=new FlexStuButton("简单按钮");
+
+                   //创建一个函数添加按钮到舞台上
+
+                   private function addSimpleButton():void
+
+                   {
+
+                            //向舞台上添加按钮            
+
+                            stage.addChild(flexbutton);
+
+                            //调整按钮的位置
+
+                            flexbutton.x=100;
+
+                            flexbutton.y=100;
+
+                   }
+
+         ]]>
+
+</mx:Script>
+
+</mx:Application>
